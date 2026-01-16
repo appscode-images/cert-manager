@@ -29,4 +29,6 @@ LABEL name="cert-manager acmesolver" \
       summary="This is the cert-manager ACME HTTP01 solver image." \
       description="This image contains the resolve for ACME HTTP01 challenges."
 
+USER 65534
+
 ENTRYPOINT ["/app/cmd/acmesolver/acmesolver"]

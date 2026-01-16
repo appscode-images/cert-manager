@@ -29,5 +29,6 @@ LABEL name="cert-manager cainjector" \
       summary="This is the cert-manager cainjector." \
       description="This image contains the cert-manager cainjector."
 
+USER 65534
 
 ENTRYPOINT ["/app/cmd/cainjector/cainjector"]
