@@ -7,10 +7,10 @@ VERSION    ?= $(shell git describe --exact-match --abbrev=0 2>/dev/null || echo 
 TAG        := $(VERSION)-ubi
 RH_COMP_ID ?=
 
-component_id.acmesolver =
-component_id.cainjector =
-component_id.controller =
-component_id.webhook    =
+component_id.acmesolver = 6969cd96bc52598aba893c76
+component_id.cainjector = 6969cdb1d4e6b45bb1b329e0
+component_id.controller = 6969cdc6bc52598aba893cfb
+component_id.webhook    = 6969cde1a53084e80dd4647d
 
 .PHONY: all-build
 all-build: build-acmesolver build-cainjector build-controller build-webhook
