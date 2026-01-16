@@ -23,6 +23,7 @@ COPY --from=source /licenses /licenses
 
 ### Required OpenShift Labels
 LABEL name="cert-manager controller" \
+      maintainer="AppsCode" \
       vendor="AppsCode" \
       release="1" \
       summary="This is the cert-manager controller image." \

@@ -23,6 +23,7 @@ COPY --from=source /licenses /licenses
 
 ### Required OpenShift Labels
 LABEL name="cert-manager acmesolver" \
+      maintainer="AppsCode" \
       vendor="AppsCode" \
       release="1" \
       summary="This is the cert-manager ACME HTTP01 solver image." \
