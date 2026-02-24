@@ -10,13 +10,14 @@ RH_COMP_ID ?=
 component_id.acmesolver = 6969cd96bc52598aba893c76
 component_id.cainjector = 6969cdb1d4e6b45bb1b329e0
 component_id.controller = 6969cdc6bc52598aba893cfb
+component_id.startupapicheck = 699fba092fcae1dc52739d3b
 component_id.webhook    = 6969cde1a53084e80dd4647d
 
 .PHONY: all-build
-all-build: build-acmesolver build-cainjector build-controller build-webhook
+all-build: build-acmesolver build-cainjector build-controller build-startupapicheck build-webhook
 
 .PHONY: all-certify
-all-certify: certify-acmesolver certify-cainjector certify-controller certify-webhook
+all-certify: certify-acmesolver certify-cainjector certify-controller certify-startupapicheck certify-webhook
 
 build-%:
 	@$(MAKE) build           \
